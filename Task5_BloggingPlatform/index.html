@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 5 | Blogging Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container top">
+      <div class="brand">
+        <span class="logo">📝</span>
+        <div>
+          <h1>Mini Blog</h1>
+          <p>Create, edit and publish posts (HTML, CSS, JS)</p>
+        </div>
+      </div>
+
+      <div class="right">
+        <input id="searchInput" class="search" type="text" placeholder="Search posts..." />
+        <button id="clearAllBtn" class="btn btn-danger" type="button">Clear All</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container grid">
+
+    <!-- Editor -->
+    <section class="card">
+      <h2 id="formTitle">Create a New Post</h2>
+
+      <form id="postForm">
+        <label>
+          Title
+          <input id="titleInput" type="text" placeholder="Enter post title" required />
+        </label>
+
+        <label>
+          Content
+          <textarea id="contentInput" rows="8" placeholder="Write your post..." required></textarea>
+        </label>
+
+        <div class="row">
+          <button id="publishBtn" class="btn btn-primary" type="submit">Publish Post</button>
+          <button id="cancelEditBtn" class="btn btn-ghost" type="button" style="display:none;">
+            Cancel Edit
+          </button>
+        </div>
+
+        <p class="hint">
+          Posts are saved in <b>localStorage</b> (optional database concept).
+        </p>
+      </form>
+    </section>
+
+    <!-- Posts -->
+    <section class="card">
+      <div class="posts-head">
+        <h2>Published Posts</h2>
+        <span id="countBadge" class="badge">0</span>
+      </div>
+
+      <div id="postsList" class="posts"></div>
+
+      <div id="emptyState" class="empty">
+        <p>No posts yet.</p>
+        <p>Create your first post from the left panel ✨</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 • Task 5 Blogging Platform • Aryan Shukla</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

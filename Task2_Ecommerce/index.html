@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Page | E-commerce</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <header class="header">
+    <div class="container topbar">
+      <a class="brand" href="#">ShopEase</a>
+
+      <div class="search">
+        <input type="text" placeholder="Search products..." aria-label="Search" />
+        <button type="button">Search</button>
+      </div>
+
+      <div class="actions">
+        <a href="#" class="link">Account</a>
+        <a href="#" class="cart">
+          Cart <span class="badge">1</span>
+        </a>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <div class="container navlinks">
+        <a href="#">Home</a>
+        <a href="#">Categories</a>
+        <a href="#">Deals</a>
+        <a href="#">Orders</a>
+        <a href="#">Support</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="container main">
+    <!-- Breadcrumb -->
+    <p class="breadcrumb">Home / Electronics / Headphones / Wireless Headphones</p>
+
+    <section class="product">
+      <!-- Product Gallery -->
+      <div class="gallery">
+        <div class="image">
+          <!-- You can replace the emoji block with an <img> later -->
+          <div class="img-placeholder" aria-label="Product image">🎧</div>
+        </div>
+
+        <div class="thumbs">
+          <div class="thumb active">🎧</div>
+          <div class="thumb">🎶</div>
+          <div class="thumb">🔋</div>
+          <div class="thumb">📦</div>
+        </div>
+
+        <div class="highlights">
+          <div class="highlight">
+            <p class="h-title">Free Delivery</p>
+            <p class="h-sub">On orders above ₹499</p>
+          </div>
+          <div class="highlight">
+            <p class="h-title">Easy Returns</p>
+            <p class="h-sub">7-day replacement</p>
+          </div>
+          <div class="highlight">
+            <p class="h-title">Secure Payment</p>
+            <p class="h-sub">UPI / Card / COD</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Details -->
+      <div class="details">
+        <p class="tag">Best Seller</p>
+        <h1>Wireless Noise-Cancelling Headphones</h1>
+
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span class="rate-text">4.6 (2,348 ratings)</span>
+        </div>
+
+        <div class="price-row">
+          <div class="price">
+            <span class="now">₹1,999</span>
+            <span class="mrp">₹3,499</span>
+            <span class="off">43% off</span>
+          </div>
+          <p class="tax">Inclusive of all taxes</p>
+        </div>
+
+        <p class="desc">
+          Experience premium sound with deep bass, active noise cancellation, and up to 40 hours
+          battery life. Comfortable ear cushions, fast charging and built-in mic for calls.
+        </p>
+
+        <div class="options">
+          <div class="opt">
+            <p class="opt-title">Color</p>
+            <div class="swatches">
+              <button class="swatch active" type="button" aria-label="Black"></button>
+              <button class="swatch s2" type="button" aria-label="Blue"></button>
+              <button class="swatch s3" type="button" aria-label="Gray"></button>
+            </div>
+          </div>
+
+          <div class="opt">
+            <p class="opt-title">Quantity</p>
+            <div class="qty">
+              <button type="button" aria-label="Decrease">−</button>
+              <input type="text" value="1" aria-label="Quantity" />
+              <button type="button" aria-label="Increase">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta">
+          <button class="btn btn-primary" type="button">Add to Cart</button>
+          <button class="btn btn-ghost" type="button">Buy Now</button>
+        </div>
+
+        <div class="delivery">
+          <p class="d-title">Delivery</p>
+          <div class="pincode">
+            <input type="text" placeholder="Enter pincode" aria-label="Pincode" />
+            <button type="button">Check</button>
+          </div>
+          <p class="d-note">Estimated delivery: 2–5 days (demo)</p>
+        </div>
+
+        <div class="specs">
+          <h2>Key Features</h2>
+          <ul>
+            <li>Active Noise Cancellation</li>
+            <li>40 hours battery life</li>
+            <li>Fast charging (10 min = 4 hours)</li>
+            <li>Bluetooth 5.3 + Built-in mic</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer mini -->
+    <footer class="footer">
+      <p>© 2026 ShopEase • Demo product page for internship task</p>
+    </footer>
+  </main>
+
+</body>
+</html>

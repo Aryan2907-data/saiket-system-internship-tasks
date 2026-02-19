@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 3 | Navigation Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <header class="header">
+    <div class="container nav-wrap">
+      <div class="logo">SaiKet Task 3</div>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact" class="btn">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sections -->
+  <main class="container">
+
+    <section id="home" class="section hero">
+      <h1>Simple Navigation Menu</h1>
+      <p>
+        This page demonstrates a clean navigation menu using HTML hyperlinks
+        and basic CSS styling. Click the menu items to jump to different sections.
+      </p>
+      <a href="#services" class="cta">Explore Services ↓</a>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        This is Task 3 for SaiKet Systems. The main goal is to create a user-friendly
+        navigation menu that links to different sections of a webpage using anchor tags.
+      </p>
+      <ul>
+        <li>Uses HTML hyperlinks (anchor tags)</li>
+        <li>Uses basic CSS for styling</li>
+        <li>Ensures smooth and easy navigation</li>
+      </ul>
+    </section>
+
+    <section id="services" class="section">
+      <h2>Services</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Web Design</h3>
+          <p>Clean layouts with responsive design and good UI spacing.</p>
+        </div>
+        <div class="card">
+          <h3>Frontend Development</h3>
+          <p>Building pages using HTML, CSS, and JavaScript basics.</p>
+        </div>
+        <div class="card">
+          <h3>Optimization</h3>
+          <p>Improving performance, readability, and user experience.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <h2>Gallery</h2>
+      <p>Sample placeholders (no images required for the task).</p>
+      <div class="grid">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Fill this form to demonstrate a user-friendly contact section.</p>
+
+      <form class="form" onsubmit="return false;">
+        <label>
+          Full Name
+          <input type="text" placeholder="Enter your name" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" placeholder="Enter your email" required />
+        </label>
+
+        <label>
+          Message
+          <textarea rows="4" placeholder="Write your message..." required></textarea>
+        </label>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <a href="#home" class="backtop">Back to Top ↑</a>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container foot">
+      <p>© 2026 • Task 3: Simple Navigation Menu • Aryan Shukla</p>
+    </div>
+  </footer>
+
+</body>
+</html>
